@@ -1,0 +1,143 @@
+# ====================================================================================
+# M5Stack WiFi Modern - Git Ignore File
+# ====================================================================================
+
+# PlatformIO
+.pio/
+.vscode/.browse.c_cpp.db*
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/ipch
+
+# Arduino IDE
+*.hex
+*.elf
+*.map
+
+# Build artifacts
+build/
+bin/
+lib/
+.pioenvs/
+.piolibdeps/
+
+# VSCode
+.vscode/
+!.vscode/extensions.json
+
+# CLion
+.clangd/
+cmake-build-*/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+desktop.ini
+
+# Linux
+*~
+.directory
+
+# Logs
+*.log
+logs/
+
+# Debug files
+*.pdb
+*.ilk
+
+# Configuration files (with sensitive data)
+secrets.h
+wifi_credentials.h
+private_config.h
+
+# Documentation build
+docs/_build/
+site/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node.js (if using for build tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+*.sublime-project
+*.sublime-workspace
+.idea/
+*.iml
+
+# Project specific
+*.bin
+*.img
+*.flash
+monitor.log
+
+# Firmware binaries
+firmware.bin
+bootloader.bin
+partitions.bin
+
+# Certificates and keys
+*.pem
+*.key
+*.crt
+*.ca-bundle
+
+# Local development
+local_config.h
+test_*
+debug_*
