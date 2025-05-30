@@ -100,7 +100,7 @@ void drawMainPage(){
     // ここにアプリ固有の画面描画処理を実装
     // 例：センサーデータ表示、グラフ描画など
     
-    updateConnectionStatusDisplay();  // 接続状態表示
+    drawConnectionStatus();  // 接続状態表示
     drawVirtualButtons("設定", "---", "---");  // 仮想ボタン
     canvas.pushSprite(&M5.Display, 0, 0);  // 画面更新
 }

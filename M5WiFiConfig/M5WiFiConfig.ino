@@ -591,15 +591,6 @@ void drawSettingsPage(){
 
 // 接続状態表示の更新
 void drawConnectionStatus() {
-    //connectionCanvas.clear(LCD_BG_COLOR);
-    // uint16_t _c = isConnect ? CONNECT_COLOR : DISCONNECT_COLOR;
-    // connectionCanvas.fillCircle(16, 10, 6, (millis() % 2000 < 1000) ? _c : LCD_BG_COLOR);
-    // connectionCanvas.setTextDatum(ML_DATUM);
-    // connectionCanvas.setTextColor(_c);
-    // connectionCanvas.drawString(connectionStatus, 26, 10);
-    // connectionCanvas.setTextColor(LCD_TEXT_COLOR);
-    //connectionCanvas.pushSprite(&M5.Display, width / 2, 20);
-
     uint16_t _c = isConnect ? CONNECT_COLOR : DISCONNECT_COLOR;
     canvas.fillCircle(width / 2 + 16, 30, 6, (millis() % 1000 < 500) ? _c : LCD_BG_COLOR);
     canvas.setTextDatum(ML_DATUM);
