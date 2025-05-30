@@ -536,7 +536,7 @@ void drawMainPage(){
     itemY += itemHeight;
     canvas.drawString("サンプルテキスト", itemX, itemY);
 
-    updateConnectionStatusDisplay();
+    drawConnectionStatus();
     drawVirtualButtons("設定", "---", "---");
     canvas.pushSprite(&M5.Display, 0, 0);
     ///////////////////////////////////////////////////////////////
@@ -584,13 +584,13 @@ void drawSettingsPage(){
     itemY += itemHeight;
     canvas.drawString(_setting_url, itemX, itemY);
 
-    updateConnectionStatusDisplay();
+    drawConnectionStatus();
     drawVirtualButtons("戻る", "再起動", "初期化");
     canvas.pushSprite(&M5.Display, 0, 0);
 }
 
 // 接続状態表示の更新
-void updateConnectionStatusDisplay() {
+void drawConnectionStatus() {
     //connectionCanvas.clear(LCD_BG_COLOR);
     // uint16_t _c = isConnect ? CONNECT_COLOR : DISCONNECT_COLOR;
     // connectionCanvas.fillCircle(16, 10, 6, (millis() % 2000 < 1000) ? _c : LCD_BG_COLOR);
